@@ -141,11 +141,18 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(this,NextActivity.class));
     }
 
-
+    /**
+     * 点击Start--启动服务
+     * @param view
+     */
     public void doStart(View view) {
         startService(new Intent(this,MyService.class));
     }
 
+    /**
+     * 点击Stop--关闭服务
+     * @param view
+     */
     public void onStop(View view) {
         stopService(new Intent(this,MyService.class));
     }
